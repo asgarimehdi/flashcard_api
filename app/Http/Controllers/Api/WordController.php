@@ -13,7 +13,7 @@ class WordController extends Controller
      */
     public function index()
     {
-         $data= Word::paginate(5);
+         $data= Word::paginate(15);
         return $data->toJson(JSON_UNESCAPED_UNICODE);
     }
 
